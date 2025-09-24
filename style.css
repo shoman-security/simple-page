@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 30%;
+
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    /* بيخلي اول حرف كابيتال ولو عايز تخلي الكلمه كلها كابيتال اكتب */
+    /* uppercase */
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.image img {
+    width: 100%;
+
+}
+
+
+.menu {
+    background-color: #123;
+    width: 40px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    /* ده عشان الكلام يجي جنب اللوجو */
+    align-items: center;
+    /* ده عشان تسنترهم على نفس السطر */
+    gap: 30px;
+    /* ده تباعد بين اللوجو والكلام */
+    transition: 0.5s;
+
+}
+
+ul li a:hover,
+.data-info .box:hover,
+td:hover {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: red;
+}
+
+.log-out a:hover {
+
+    background-color: aqua;
+}
+
+ul li a i {
+    font-size: 20px;
+    /* دي الايكونات بتتعامل معامله الخطوط ممكن اديها لون وحجم وخكذا */
+    color: bisque;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.titel-info {
+    background-color: rgb(33, 73, 112);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data-info .box i {
+    font-size: 30px;
+}
+
+.data-info .box .data {
+    align-items: center;
+}
+
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 4px;
+
+}
+
+td,
+th {
+    background-color: #123;
+    height: 40px;
+}
+
+th {
+    background-color: rgb(17, 6, 132);
+}
+
+.price,
+.count {
+    border-radius: 8px;
+    padding: 6px;
+}
